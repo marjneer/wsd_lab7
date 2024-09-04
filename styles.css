@@ -1,0 +1,130 @@
+*{
+    margin:0px;
+}
+
+/* Title Container */
+#title {
+    text-align: center;
+    background-color: #A1D6B2;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+#title h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+#title-container .fas {
+    font-size: 30px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #F1F3C2;
+    margin: 0px;
+    padding: 0px;
+    /* color: #333; */
+}
+
+h1 {
+    text-align: center;
+    /* color: #4a4a4a; */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Book Container */
+#books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px;
+}
+
+#books-container div {
+    background-color: #CEDF9F;
+    border-radius: 8px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#books-container img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Search and Sorting */
+.search-sort-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 8px;
+    font-size: 16px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#sorting {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Pagination */
+#pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pagination-container button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    background-color: #E8B86D;
+    /* color: white; */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pagination-container button:hover {
+    background-color: #FFDC7F;
+}
+
+#pagination-container button.active {
+    background-color: #FFDC7F;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #books-container div {
+        width: 100%;
+    }
+
+    .search-sort-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #search {
+        width: 100%;
+    }
+}
